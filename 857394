@@ -1,0 +1,24 @@
+import time
+
+def print_with_typewriter_effect(text, delay_seconds):
+    for char in text:
+        print(char, end='', flush=True)
+        time.sleep(delay_seconds)
+    print()
+
+letter_text = """
+ Hi, It's been three years since we went our separate ways, I haven't moved on. I'm just letting you live your life.
+
+ Recently, you've been showing up in my dreams in a way thatfeels so real, and I didn't want to wake up. I might not reach out, but if you ever did, I'd reply instantly. I may not say good morning and good night anymore, but you're always the last thought I have before I drift off to sleep. 
+ 
+ I'm trying to focus on myself, but the truth is, I miss youdeeply. I'd love to talk to you, but I know where to stand. I know my worth, and I won't forget that. You're always in my heart, and it will always have a place for you. 
+Take care always, til next time, 
+
+My Maria.🦋 
+"""
+
+# Set the delay between characters (adjust as needed)
+delay_seconds = 0.08
+
+# Display the letter with typewriter effect
+print_with_typewriter_effect(letter_text, delay_seconds)
